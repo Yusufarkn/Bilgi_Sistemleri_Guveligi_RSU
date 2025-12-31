@@ -28,30 +28,29 @@ sistemlerden ve **kaos teorisinden** esinlenmiştir. Standart algoritmaların
   kullanılarak sayı uzayında homojen dağılım sağlanır.
 
 ---
-
 ## 2. Sözde Kod (Pseudocode)
 
+```text
 BAŞLAT
-GİRDİ: tohum (seed)
-SABİTLER:
-ASAL_1 = 0x9E3779B97F4A7C15
-ASAL_2 = 0xBF58476D1CE4E5B9
-X = tohum
-Y = (tohum * ASAL_1)
-Z = (tohum XOR ASAL_2) + X
+    GİRDİ: tohum (seed)
+    SABİTLER:
+        ASAL_1 = 0x9E3779B97F4A7C15
+        ASAL_2 = 0xBF58476D1CE4E5B9
 
-FONKSİYON RastgeleSayiUret():
-    gecici_x = X
+    X = tohum
+    Y = (tohum * ASAL_1)
+    Z = (tohum XOR ASAL_2) + X
 
-    donme_miktari = Y MOD 64
-    X = (X SOLA_DÖNDÜR donme_miktari) XOR Z
+    FONKSİYON RastgeleSayiUret():
+        gecici_x = X
 
-    Y = ((Y XOR Z) * ASAL_2)
-    Z = ((Z + gecici_x) * ASAL_1)
+        donme_miktari = Y MOD 64
+        X = (X SOLA_DÖNDÜR donme_miktari) XOR Z
 
-    SONUÇ = (X + Y + Z)
-    DÖNDÜR SONUÇ
-SON
+        Y = ((Y XOR Z) * ASAL_2)
+        Z = ((Z + gecici_x) * ASAL_1)
+
+        SONUC = (X + Y + Z)
 
 ---
 

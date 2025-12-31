@@ -51,6 +51,10 @@ BAŞLAT
         Z = ((Z + gecici_x) * ASAL_1)
 
         SONUC = (X + Y + Z)
+        DÖNDÜR SONUC
+    SON
+BİTİR
+```
 
 ---
 

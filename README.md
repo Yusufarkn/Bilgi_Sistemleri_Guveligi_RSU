@@ -49,7 +49,7 @@ BİTİR
 ## 3. Akış Şeması (Flowchart)
 Algoritmanın döngüsel yapısını gösteren şema aşağıdadır:
 
-![Akış Şeması](akıs_şeması.png.png)
+![Akış Şeması](sema.png)
 
 ##  4. İstatistiksel Testler ve Güvenlik Analizi
 Algoritmanın ürettiği sayıların rastgeleliğini doğrulamak için main.py dosyası içerisinde aşağıdaki testler otomatik olarak yapılmaktadır:
@@ -69,4 +69,4 @@ Yorum: Değerin serbestlik derecesine yakın olması, dağılımın rastgele old
 ## 5. Örnek Çalışma Çıktısı ve Kanıt
 ...başarıyla geçtiğini göstermektedir:
 
-![Test Sonuçları](test_sonucu.png.png)
+![Test Sonuçları](kanit.png)
